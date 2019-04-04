@@ -1,1 +1,139 @@
-/* Todo app style */
+@import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro');
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Source Sans Pro', sans-serif;
+}
+
+.input-box {
+  background-color: rgb(238, 141, 141);
+  border-radius: 18px; 
+  box-shadow: 2px 2px 10px rgba(238, 166, 166, 0.589);
+  margin: 6% 6% 2% 6%;
+  padding: 2%;
+  border: 0;
+}
+
+.input-box__title {
+  border: solid 3px rgb(238, 141, 141);
+  background-color: snow;
+  border-radius: 35px;
+  padding: 10px;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+label {
+  font-size: 110%;
+  color: rgba(0, 0, 0, 0.815);
+  margin: 10px;
+  font-weight: 900;
+}
+
+.input-box__text{
+  width: 97%;
+  font-size: 16px;
+  margin: 10px;
+}
+
+.input-box__button {
+  display: flex;
+  flex-direction: row-reverse;
+  display: flex;
+  padding: 0 3% 0 3%;
+  margin: 2%;
+  width: 100%;
+  justify-content: space-between;
+  
+}
+
+.input-box__button--add {
+  background-color: rgba(0, 0, 0, 0.673);
+  color: white;
+  padding: 5px;
+  border-radius: 9px;
+  font-size: 110%;
+}
+
+.input-box__buttons--ascending {
+  background-color: rgb(94, 87, 175);
+  color: white;
+  padding: 3px;
+  border-radius: 9px;
+  font-size: 90%;
+}
+
+.input-box__buttons--descending {
+  background-color: rgb(94, 87, 175);
+  color: white;
+  padding: 3px;
+  border-radius: 9px;
+  font-size: 90%;
+  position: relative;
+  right: 5%;
+}
+
+ul > li {
+  display: grid;
+  display: grid;
+  grid-template-columns: repeat(2, 3fr);
+  padding: 5%;
+  margin: 2% 6% 2% 6%;
+  border-radius: 15px; 
+  box-shadow: 2px 2px 10px rgba(204, 240, 227, 0.99);
+  background-color: rgb(204, 240, 227);
+  justify-items: left;
+}
+
+.card-title {
+  grid-column: 1;
+  grid-row: 1;
+  padding: 3%;
+  place-self: center stretch;
+  font-size: 160%;
+}
+
+.card-text {
+  padding: 3%;
+  grid-column: 1;
+  grid-row: 2;
+  place-self: center stretch;
+  font-size: 110%;
+}
+
+.card-time {
+  grid-column: 2;
+  grid-row: 1;
+  align-self: start;
+  justify-self: end;
+  font-size: 80%;
+  color: rgba(7, 7, 7, 0.769);
+}
+
+.card-removemBtn {
+  font-size: 1.8vw;
+  grid-column: 2;
+  grid-row: 2;
+  background-color: rgb(201, 74, 59);
+  color: white;
+  margin: 2px;
+  justify-self: end;
+  align-self: end;
+  padding: 9px;
+  border-radius: 15px;
+}
+
+.card-checked{
+  background-color: rgb(216, 216, 216);
+}
+
+.card-checked > h2, .card-checked > p{
+  color: rgba(128, 128, 128, 0.733);
+  text-decoration-line: line-through;
+  font-style: italic;
+}

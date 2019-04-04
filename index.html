@@ -8,6 +8,32 @@
   <script src="js/todo.js"></script>
 </head>
 <body>
-  <!-- Add your markup here -->
+
+          <div>
+              <fieldset class="input-box">
+                <legend class="input-box__title">Register new ToDo</legend>
+
+                <label>Title:</label><br>
+                <input type="text" class="input-box__text" id="toDoTitle" required><br>
+
+                <label>Description:</label><br>
+                <input type="text" class="input-box__text" id="toDoBody" required><br><br>
+              
+              
+                <span class="input-box__button">
+                  <button id="addItems" class="input-box__button--add" onclick="addElement();">Add</button>
+
+                  <button id="sortAsc" class="input-box__buttons--ascending" onclick="sortAsc();">Sort Ascending</button>
+                  <button id="sortDesc" class="input-box__buttons--descending" onclick="sortDesc();">Sort Descending</button>
+                </span>
+              </fieldset>
+
+          <div>
+
+              <ul class="card-wrapper" id="toDoList">
+
+              </ul>
+          </div>
+    
 </body>
 </html>
